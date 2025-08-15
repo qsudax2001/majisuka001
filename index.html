@@ -1,46 +1,75 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Majisuka001 LP</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-            text-align: center;
+<meta charset="UTF-8">
+<title>マジすか学園</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+    body {
+        margin: 0;
+        font-family: 'RocknRoll One', sans-serif;
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABgAAAAQACAIAAACoEwUVAADVumNhQlgAANW6anVtYgAAAB5qdW1kYzJwYQARABCAAACqADibcQNjMnBhAAAANxNqdW1iAAAAR2p1bWRjMm1hABEAEIAAAKoAOJtxA3VybjpjMnBhOmUxMjEyNDAzLWNmZW...（中略）...') center/cover no-repeat fixed;
+        text-align: center;
+        color: #fff;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-top: 40px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    .buttons {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    a.button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 60px;
+        font-size: 1.4rem;
+        color: white;
+        background-color: rgba(220, 53, 69, 0.9);
+        border-radius: 8px;
+        text-decoration: none;
+        transition: transform 0.2s, background-color 0.2s;
+    }
+
+    a.button:hover {
+        background-color: rgba(255, 75, 100, 0.95);
+        transform: translateY(-3px);
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 2rem;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 2rem;
+        a.button {
+            width: 80%;
+            font-size: 1.2rem;
         }
-        section {
-            padding: 2rem;
-        }
-        footer {
-            background-color: #222;
-            color: white;
-            padding: 1rem;
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
-    <header>
-        <h1>Majisuka001</h1>
-        <p>ここにキャッチコピー</p>
-    </header>
 
-    <section>
-        <h2>商品やサービスの紹介</h2>
-        <p>ここに説明文を入れます。</p>
-    </section>
+    <h1>マジすか学園</h1>
 
-    <footer>
-        <p>&copy; 2025 Majisuka001</p>
-    </footer>
+    <div class="buttons">
+        <a class="button" href="https://poe.com/chat/ru80lqz5zl84tduujz" target="_blank">コンシェルジェ</a>
+        <a class="button" href="https://poe.com/chat/r0856xg96i9r48nfim" target="_blank">森野豊彦</a>
+        <a class="button" href="https://poe.com/chat/r0m7og2b3s4yzjrdox" target="_blank">マチ子先生</a>
+        <a class="button" href="https://poe.com/chat/r0hzyipk5ezae3qynd" target="_blank">九十九博士</a>
+        <a class="button" href="https://poe.com/chat/r0p16f3fflydxs0key" target="_blank">カニ沢カニ夫</a>
+        <a class="button" href="https://poe.com/chat/r0q0c1xi59q96whgvy" target="_blank">五寸釘ミドリ</a>
+    </div>
+
 </body>
 </html>
