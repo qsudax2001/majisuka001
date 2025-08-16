@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>マジすか学園</title>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
@@ -21,11 +22,12 @@
     }
 
     .buttons {
-        margin-top: 60px;
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 16px;
         align-items: center;
+        padding-bottom: 40px;
     }
 
     a.button {
@@ -49,12 +51,21 @@
 
     /* スマホ対応 */
     @media (max-width: 480px) {
+        body {
+            background-attachment: scroll; /* モバイルでfixedが効かない対策 */
+        }
         h1 {
             font-size: 2rem;
+            margin-top: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+            gap: 12px;
         }
         a.button {
-            width: 80%;
-            font-size: 1.2rem;
+            width: 85%;
+            height: 50px;
+            font-size: 1.1rem;
         }
     }
 </style>
@@ -62,15 +73,3 @@
 <body>
 
     <h1>マジすか学園</h1>
-
-    <div class="buttons">
-        <a class="button" href="https://poe.com/chat/ru80lqz5zl84tduujz" target="_blank">コンシェルジェ</a>
-        <a class="button" href="https://poe.com/chat/r0856xg96i9r48nfim" target="_blank">森野豊彦</a>
-        <a class="button" href="https://poe.com/chat/r0m7og2b3s4yzjrdox" target="_blank">マチ子先生</a>
-        <a class="button" href="https://poe.com/chat/r0hzyipk5ezae3qynd" target="_blank">九十九博士</a>
-        <a class="button" href="https://poe.com/chat/r0p16f3fflydxs0key" target="_blank">カニ沢カニ夫</a>
-        <a class="button" href="https://poe.com/chat/r0q0c1xi59q96whgvy" target="_blank">五寸釘ミドリ</a>
-    </div>
-
-</body>
-</html>
