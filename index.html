@@ -12,6 +12,7 @@
         background: url('chalkboard002.png') center/cover no-repeat fixed;
         text-align: center;
         color: #fff;
+        min-height: 100vh;
     }
 
     h1 {
@@ -49,12 +50,21 @@
 
     /* スマホ対応 */
     @media (max-width: 480px) {
+        body {
+            background-size: contain;  /* 背景が切れずに収まるよう調整 */
+        }
         h1 {
-            font-size: 2rem;
+            font-size: 2.4rem;   /* タイトル少し大きめ */
+            margin-top: 20px;
+        }
+        .buttons {
+            margin-top: 40px;
+            gap: 15px;
         }
         a.button {
-            width: 80%;
-            font-size: 1.2rem;
+            width: 90%;        /* 横幅を広げる */
+            height: 70px;      /* ボタンを大きく */
+            font-size: 1.4rem; /* 文字も大きめ */
         }
     }
 </style>
