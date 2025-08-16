@@ -46,3 +46,40 @@
         font-size: 1.4rem;
         color: white;
         background-color: rgba(220, 53, 69, 0.9);
+        border-radius: 8px;
+        text-decoration: none;
+        transition: transform 0.2s, background-color 0.2s;
+    }
+
+    a.button:hover {
+        background-color: rgba(255, 75, 100, 0.95);
+        transform: translateY(-3px);
+    }
+
+    /* スマホ対応 */
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 2rem;
+        }
+        a.button {
+            width: 80%;
+            font-size: 1.2rem;
+        }
+    }
+</style>
+</head>
+<body>
+
+    <h1>マジすか学園</h1>
+
+    <div class="buttons">
+        <a class="button" href="https://poe.com/chat/ru80lqz5zl84tduujz" target="_blank">コンシェルジェ</a>
+        <a class="button" href="https://poe.com/chat/r0856xg96i9r48nfim" target="_blank">森野豊彦</a>
+        <a class="button" href="https://poe.com/chat/r0m7og2b3s4yzjrdox" target="_blank">マチ子先生</a>
+        <a class="button" href="https://poe.com/chat/r0hzyipk5ezae3qynd" target="_blank">九十九博士</a>
+        <a class="button" href="https://poe.com/chat/r0p16f3fflydxs0key" target="_blank">カニ沢カニ夫</a>
+        <a class="button" href="https://poe.com/chat/r0q0c1xi59q96whgvy" target="_blank">五寸釘ミドリ</a>
+    </div>
+
+</body>
+</html>
