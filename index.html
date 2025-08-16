@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ★ これを追加 -->
 <title>マジすか学園</title>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
@@ -50,11 +51,8 @@
 
     /* スマホ対応 */
     @media (max-width: 480px) {
-        body {
-            background-size: contain;  /* 背景が切れずに収まるよう調整 */
-        }
         h1 {
-            font-size: 2.4rem;   /* タイトル少し大きめ */
+            font-size: 2rem;
             margin-top: 20px;
         }
         .buttons {
@@ -62,9 +60,9 @@
             gap: 15px;
         }
         a.button {
-            width: 90%;        /* 横幅を広げる */
-            height: 70px;      /* ボタンを大きく */
-            font-size: 1.4rem; /* 文字も大きめ */
+            width: 90%;
+            height: 70px;
+            font-size: 1.3rem;
         }
     }
 </style>
