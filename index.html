@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>マジすか学園 キャラリンク集</title>
-  <style>
+<meta charset="UTF-8">
+<title>マジすか学園</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
     body {
-      font-family: 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif;
-      background: url('https://raw.githubusercontent.com/qsudax2001/majisuka001/main/chalkboard-bg-lightgreen.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      text-align: center;
-      margin: 0;
-      padding: 0;
+        margin: 0;
+        font-family: 'RocknRoll One', sans-serif;
+        background: url('bg.png') center/cover no-repeat fixed;
+        text-align: center;
+        color: #fff;
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-top: 40px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        font-size: 3rem;
+        margin-top: 40px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
     }
 
-    .button-container {
-      margin-top: 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
+    .buttons {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
     }
 
-    .char-button {
-      display: inline-block;
-      width: 250px;
-      padding: 12px 0;
-      background-color: rgba(255, 255, 255, 0.1);
-      border: 2px solid white;
-      border-radius: 8px;
-      color: white;
-      font-size: 1.2em;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background-color 0.3s, transform 0.2s;
+    a.button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 60px;
+        font-size: 1.4rem;
+        color: white;
+        background-color: rgba(220, 53, 69, 0.9);
+        border-radius: 8px;
+        text-decoration: none;
+        transition: transform 0.2s, background-color 0.2s;
     }
 
-    .char-button:hover {
-      background-color: rgba(255, 255, 255, 0.3);
-      transform: scale(1.05);
+    a.button:hover {
+        background-color: rgba(255, 75, 100, 0.95);
+        transform: translateY(-3px);
     }
 
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      opacity: 0.7;
+    /* スマホ対応 */
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 2rem;
+        }
+        a.button {
+            width: 80%;
+            font-size: 1.2rem;
+        }
     }
-  </style>
+</style>
 </head>
 <body>
-  <h1>マジすか学園 キャラリンク集</h1>
-  <div class="button-container">
-    <a class="char-button" href="https://poe.com/chat/ru80lqz5zl84tduujz" target="_blank">コンシェルジェ</a>
-    <a class="char-button" href="https://poe.com/chat/r0856xg96i9r48nfim" target="_blank">森野豊彦</a>
-    <a class="char-button" href="https://poe.com/chat/r0m7og2b3s4yzjrdox" target="_blank">マチ子先生</a>
-    <a class="char-button" href="https://poe.com/chat/r0hzyipk5ezae3qynd" target="_blank">九十九博士（つくもはかせ）</a>
-    <a class="char-button" href="https://poe.com/chat/r0p16f3fflydxs0key" target="_blank">カニ沢カニ夫</a>
-    <a class="char-button" href="https://poe.com/chat/r0q0c1xi59q96whgvy" target="_blank">五寸釘ミドリ</a>
-  </div>
 
-  <footer>
-    &copy; 2025 マジすか学園
-  </footer>
+    <h1>マジすか学園</h1>
+
+    <div class="buttons">
+        <a class="button" href="https://poe.com/chat/ru80lqz5zl84tduujz" target="_blank">コンシェルジェ</a>
+        <a class="button" href="https://poe.com/chat/r0856xg96i9r48nfim" target="_blank">森野豊彦</a>
+        <a class="button" href="https://poe.com/chat/r0m7og2b3s4yzjrdox" target="_blank">マチ子先生</a>
+        <a class="button" href="https://poe.com/chat/r0hzyipk5ezae3qynd" target="_blank">九十九博士</a>
+        <a class="button" href="https://poe.com/chat/r0p16f3fflydxs0key" target="_blank">カニ沢カニ夫</a>
+        <a class="button" href="https://poe.com/chat/r0q0c1xi59q96whgvy" target="_blank">五寸釘ミドリ</a>
+    </div>
+
 </body>
 </html>
-
